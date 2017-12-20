@@ -1,0 +1,12 @@
+﻿<br />
+<br />
+<h4> Results</h4>
+<div>
+    <div ng-if="menu.found.length==0">Nothing found</div>
+    <ul class="zebra">
+        <li ng-repeat="item in menu.found" >
+            {{item.name}}, {{item.short_name}}, {{item.description}}
+            <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+        </li>
+    </ul>
+</div>
