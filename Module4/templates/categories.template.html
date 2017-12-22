@@ -1,0 +1,9 @@
+<ul class="zebra">
+    <li ng-repeat="category in $ctrl.categories">
+        {{category.name}}
+        <a ui-sref="items({categoryId: category.short_name})">
+           >>>> {{category.short_name}} 
+        </a>
+    </li>
+</ul>
+<!--<categories items="categoriesCtrl.categories"></categories>-->

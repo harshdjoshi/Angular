@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app='MenuApp'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <h1>Welcome to Waldo's Restaurant</h1>
+    <div class="navbar-brand">
+        <a class="navbar-brand" ui-sref="home">Restaurant</a>
+    </div>
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="../angular.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="Scripts/data.module.js"></script>
+    <script src="Scripts/menuapp.module.js"></script>
+   
+
+    <!-- Module artifacts -->
+    <script src="Scripts/menudata.service.js"></script>
+    <script src="Scripts/categories.component.js"></script>
+    <script src="Scripts/items.component.js"></script>
+    <script src="Scripts/routes.js"></script>
+    <script src="Scripts/categories.controller.js"></script>
+    <script src="Scripts/items.controller.js"></script>
+
+</body>
+
+</html>
